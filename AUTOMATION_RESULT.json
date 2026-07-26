@@ -1,8 +1,12 @@
 ﻿{
-    "tag":  "v0.1.0",
-    "generated_at":  "2026-07-26T04:38:40.9933282+03:00",
-    "repository_name":  "research-software-portfolio",
     "mode":  "HOST_ONLY_FINALIZER",
-    "expected_visibility":  "public",
-    "status":  "PENDING_REMOTE_VERIFICATION"
+    "repository_name":  "research-software-portfolio",
+    "private_repository":  false,
+    "remote_head":  "ae739e385a4ff6ea04f980648c52bfb15beeaa55",
+    "verified_at":  "2026-07-26T04:38:49.6356886+03:00",
+    "tag_v0_1_0":  true,
+    "force_push_used":  false,
+    "status":  "VERIFIED",
+    "public_repository":  true,
+    "local_head":  "ae739e385a4ff6ea04f980648c52bfb15beeaa55"
 }
