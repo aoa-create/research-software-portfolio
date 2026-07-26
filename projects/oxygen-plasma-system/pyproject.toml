@@ -1,0 +1,54 @@
+[features]
+instruments = true
+extensions = true
+models = true
+h5exporters = false
+scanners = false
+
+[urls]
+package-url = "https://github.com/aoa-create/research-software-portfolio/tree/main/projects/oxygen-plasma-system"
+
+[project]
+name = "pymodaq-plugins-oxygen-plasma"
+version = "0.1.0"
+description = "Safety-first PyMoDAQ-oriented oxygen plasma process control skeleton"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Ali Onur Asap", email = "alionurasap@gmail.com"}
+]
+dependencies = [
+  "qtpy>=2.4,<3",
+  "PySide6>=6.7,<7"
+]
+
+[project.optional-dependencies]
+pymodaq = [
+  "pymodaq>=5.2.0",
+  "pymodaq-utils>=5.2.0",
+  "pymodaq-gui>=5.2.0",
+  "pymodaq-data>=5.2.0"
+]
+dev = [
+  "pytest>=8,<9",
+  "ruff>=0.5,<1"
+]
+
+[project.scripts]
+oxygen-plasma-gui = "pymodaq_plugins_oxygen_plasma.app.main:main"
+
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pymodaq_plugins_oxygen_plasma"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
