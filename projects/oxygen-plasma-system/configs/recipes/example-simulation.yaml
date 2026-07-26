@@ -1,0 +1,3 @@
+name: simulation-placeholder
+status: not_executable
+notes: GUI v1 does not implement recipe parameters or execution.
