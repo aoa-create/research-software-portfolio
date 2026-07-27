@@ -1,8 +1,0 @@
-mode: simulation
-hardware_outputs_enabled: false
-devices:
-  pressure_gauge: null
-  oxygen_mfc: null
-  vacuum_pump: null
-  chamber_valves: null
-  rf_generator: null
